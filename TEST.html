@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="movable.js"></script>
+    <script language="JavaScript">
+        window.onload=function() {
+            var li = document.getElementById('li1');
+            li.onmouseover = function () {
+                stratMove(li, {'width':400,'height':200})
+            }
+            li.onmouseout = function () {
+                stratMove(li, {'width':200,'height':100})
+            }
+        }
+    </script>
+    <title>Title</title>
+    <style type="text/css">
+        li{
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li id="li1">
+    </li>
+</ul>
+</body>
+</html>
